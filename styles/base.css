@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Updated gradient: Deep Purple starts (0%), Primary Purple dominates until 80%, 
+       and Bright Pink only appears in the last 20% to give a subtle fade. */
+    background: linear-gradient(135deg, var(--deep-purple) 0%, var(--primary-purple) 80%, var(--bright-pink) 100%);
+    color: var(--white);
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--pastel);
+    animation: pulse 3s infinite;
+    text-shadow: 0 0 15px var(--accent-purple);
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: var(--pastel);
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

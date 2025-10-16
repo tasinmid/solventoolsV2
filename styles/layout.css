@@ -1,0 +1,110 @@
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Asimovian', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-purple);
+    letter-spacing: 2px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 100px 0 60px;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0 20px;
+    color: var(--white);
+    font-size: 0.9rem;
+    border: none;
+}
+
+.tools-container {
+    padding: 0 0 50px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    width: 100%;
+}
+
+.pre-register-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto 0;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    max-width: 800px;
+    border: 1px solid var(--deep-purple);
+}
+
+.pre-register-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--pastel);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.violet-splatter {
+    position: absolute;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.splatter-1 {
+    top: 10%;
+    left: 5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+.splatter-2 {
+    bottom: 15%;
+    right: 8%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--primary-purple) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(30px);
+}
+
+.crack {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--primary-purple), transparent);
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.crack-1 {
+    top: 25%;
+    transform: rotate(-5deg);
+}
+
+.crack-2 {
+    top: 75%;
+    transform: rotate(3deg);
+}

@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    h1 { font-size: 3.2rem; }
+    .subtitle { font-size: 1.4rem; }
+    .tool-icon { height: 180px; }
+    .tool-icon i { font-size: 4.5rem; }
+    .pre-register-section { padding: 30px 20px 50px; }
+    .modal-content, .success-modal-content { width: 95%; padding: 25px; }
+    .button-row { flex-direction: column; gap: 12px; }
+    .close-success-btn, .schedule-btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2.5rem; }
+    .subtitle { font-size: 1.2rem; }
+    header { padding: 70px 0 50px; }
+    .tool-icon { height: 150px; }
+    .tool-icon i { font-size: 3.5rem; }
+    .tool-content { padding: 25px 20px; }
+    .tool-title { font-size: 1.6rem; }
+    .pre-register-title { font-size: 1.4rem; }
+    .pre-register-button { padding: 14px 35px; font-size: 1rem; }
+    footer { padding: 20px 0 10px; }
+    .modal-header h2, .success-header h2 { font-size: 1.4rem; }
+    .profile-pic { width: 60px; height: 60px; }
+}

@@ -1,0 +1,16 @@
+:root {
+    --deep-purple: #1B0629; /* UPDATED: Deeper, darker purple */
+    --primary-purple: #7A1CAC;
+    --accent-purple: #AD49E1;
+    --bright-pink: #FF0080; 
+    --pastel: #EBD3F8;
+    --white: #ffffff;
+    --muted: #cfcfda;
+    --tick-green: #24a148;
+    --card-radius: 14px;
+    --control-height: 52px;
+    --control-radius: 10px;
+    --control-padding-x: 14px;
+    --control-bg: rgba(255,255,255,0.02);
+    --control-border: rgba(255,255,255,0.06);
+}
