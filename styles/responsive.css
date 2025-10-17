@@ -1,4 +1,17 @@
+@media (min-width: 769px) {
+    .logo {
+        left: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header {
+        padding-top: 150px;
+    }
     h1 { font-size: 3.2rem; }
     .subtitle { font-size: 1.4rem; }
     .tool-icon { height: 180px; }

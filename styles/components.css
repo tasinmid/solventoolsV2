@@ -236,9 +236,10 @@
 
 /* Notify Modal */
 .modal {
+    display: none;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -251,8 +252,9 @@
 }
 
 .modal.show-modal {
+    display: block;
     opacity: 1;
-    visibility: visible;
+    transform: scale(1);
 }
 
 .modal-content {
@@ -265,7 +267,6 @@
     box-shadow: 0 20px 50px rgba(138, 43, 226, 0.4);
     position: relative;
     border: 1px solid #4b0082;
-    transform: translateY(-50px); /* Initial state for transition */
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
@@ -380,9 +381,10 @@
 
 /* Success Modal - NEW */
 .success-modal {
+    display: none;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     position: fixed;
     z-index: 1001;
     left: 0;
@@ -395,8 +397,9 @@
 }
 
 .success-modal.show-modal {
+    display: block;
     opacity: 1;
-    visibility: visible;
+    transform: scale(1);
 }
 
 .success-modal-content {
@@ -410,7 +413,6 @@
     position: relative;
     border: 1px solid #4b0082;
     text-align: center;
-    transform: translateY(-50px); /* Initial state for transition */
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
@@ -523,6 +525,8 @@
     font-size: 0.95rem;
     box-shadow: 0 4px 10px rgba(138, 43, 226, 0.5);
     text-decoration: none; /* Remove underline */
+    position: relative;
+    overflow: hidden;
 }
 
 .schedule-btn::before {

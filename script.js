@@ -11,16 +11,16 @@ notifyButtons.forEach(button => {
     button.addEventListener("click", function() {
         const toolName = this.getAttribute("data-tool");
         toolNameSpan.textContent = toolName;
-        notifyModal.style.display = "block";
+        notifyModal.classList.add("show-modal");
         notifyForm.reset();
     });
 });
 
 // Close notify modal
-notifyCloseBtn.onclick = () => notifyModal.style.display = "none";
+notifyCloseBtn.onclick = () => notifyModal.classList.remove("show-modal");
 window.onclick = (e) => {
-    if (e.target === notifyModal) notifyModal.style.display = "none";
-    if (e.target === successModal) successModal.style.display = "none";
+    if (e.target === notifyModal) notifyModal.classList.remove("show-modal");
+    if (e.target === successModal) successModal.classList.remove("show-modal");
 };
 
 // Handle form submission
@@ -47,12 +47,12 @@ notifyForm.onsubmit = (e) => {
     }).catch(console.warn);
     
     // Close notify modal and open success modal
-    notifyModal.style.display = "none";
-    successModal.style.display = "block";
+    notifyModal.classList.remove("show-modal");
+    successModal.classList.add("show-modal");
 };
 
 // Close success modal
 closeSuccessBtn.onclick = () => {
-    successModal.style.display = "none";
+    successModal.classList.remove("show-modal");
     window.location.href = window.location.pathname;
 };
